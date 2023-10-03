@@ -1,0 +1,715 @@
+
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Currency Rates {now}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta name=”description” content="Finance mobile applications have become an integral part of the modern investment world.
+    They provide a convenient and accessible way to monitor financial markets in real-time, allowing users
+    to track stocks, bonds, funds, and other financial instruments">
+
+</head>
+
+<body>
+
+<div style="text-align:center">
+    <h1>Currency Rates</h1>
+    <h4>Date: <span>{now}</span></h4>
+
+    <table class="table">
+        <tr class="table-primary">
+            <td>AED/USD</td>
+            <td>{currency.getAED() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>AFN/USD</td>
+            <td>{currency.getAFN() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ALL/USD</td>
+            <td>{currency.getALL() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>AMD/USD</td>
+            <td>{currency.getAMD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ANG/USD</td>
+            <td>{currency.getANG() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>AOA/USD</td>
+            <td>{currency.getAOA() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ARS/USD</td>
+            <td>{currency.getARS() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>AUD/USD</td>
+            <td>{currency.getAUD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>AWG/USD</td>
+            <td>{currency.getAWG() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>AZN/USD</td>
+            <td>{currency.getAZN() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BAM/USD</td>
+            <td>{currency.getBAM() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BBD/USD</td>
+            <td>{currency.getBBD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BDT/USD</td>
+            <td>{currency.getBDT() ?: "0.00"}</td>
+        </tr>
+
+        <tr class="table-primary">
+            <td>BGN/USD</td>
+            <td>{currency.getBGN() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BIF/USD</td>
+            <td>{currency.getBIF() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BMD/USD</td>
+            <td>{currency.getBMD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BND/USD</td>
+            <td>{currency.getBND() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BOB/USD</td>
+            <td>{currency.getBOB() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BRL/USD</td>
+            <td>{currency.getBRL() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BSD/USD</td>
+            <td>{currency.getBSD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BTC/USD</td>
+            <td>{currency.getBTC() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BTN/USD</td>
+            <td>{currency.getBTN() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BWP/USD</td>
+            <td>{currency.getBWP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BYN/USD</td>
+            <td>{currency.getBYN() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>BZD/USD</td>
+            <td>{currency.getBZD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CAD/USD</td>
+            <td>{currency.getCAD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CDF/USD</td>
+            <td>{currency.getCDF() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CHF/USD</td>
+            <td>{currency.getCHF() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CLF/USD</td>
+            <td>{currency.getCLF() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CLP/USD</td>
+            <td>{currency.getCLP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CNH/USD</td>
+            <td>{currency.getCNH() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CNY/USD</td>
+            <td>{currency.getCNY() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>COP/USD</td>
+            <td>{currency.getCOP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CRC/USD</td>
+            <td>{currency.getCRC() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CUC/USD</td>
+            <td>{currency.getCUC() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CUP/USD</td>
+            <td>{currency.getCUP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CVE/USD</td>
+            <td>{currency.getCVE() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>CZK/USD</td>
+            <td>{currency.getCZK() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>DJF/USD</td>
+            <td>{currency.getDJF() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>DKK/USD</td>
+            <td>{currency.getDKK() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>DOP/USD</td>
+            <td>{currency.getDOP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>DZD/USD</td>
+            <td>{currency.getDZD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>EGP/USD</td>
+            <td>{currency.getEGP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ERN/USD</td>
+            <td>{currency.getERN() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ETB/USD</td>
+            <td>{currency.getETB() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>EUR/USD</td>
+            <td>{currency.getEUR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>FJD/USD</td>
+            <td>{currency.getFJD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>FKP/USD</td>
+            <td>{currency.getFKP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GBP/USD</td>
+            <td>{currency.getGBP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GEL/USD</td>
+            <td>{currency.getGEL() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GGP/USD</td>
+            <td>{currency.getGGP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GHS/USD</td>
+            <td>{currency.getGHS() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GIP/USD</td>
+            <td>{currency.getGIP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GMD/USD</td>
+            <td>{currency.getGMD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GNF/USD</td>
+            <td>{currency.getGNF() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GTQ/USD</td>
+            <td>{currency.getGTQ() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>GYD/USD</td>
+            <td>{currency.getGYD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>HKD/USD</td>
+            <td>{currency.getHKD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>HNL/USD</td>
+            <td>{currency.getHNL() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>HRK/USD</td>
+            <td>{currency.getHRK() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>HTG/USD</td>
+            <td>{currency.getHTG() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>HUF/USD</td>
+            <td>{currency.getHUF() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>IDR/USD</td>
+            <td>{currency.getIDR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ILS/USD</td>
+            <td>{currency.getILS() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>IMP/USD</td>
+            <td>{currency.getIMP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>INR/USD</td>
+            <td>{currency.getINR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>IQD/USD</td>
+            <td>{currency.getIQD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>IRR/USD</td>
+            <td>{currency.getIRR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ISK/USD</td>
+            <td>{currency.getISK() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>JEP/USD</td>
+            <td>{currency.getJEP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>JMD/USD</td>
+            <td>{currency.getJMD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>JOD/USD</td>
+            <td>{currency.getJOD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>JPY/USD</td>
+            <td>{currency.getJPY() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KES/USD</td>
+            <td>{currency.getKES() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KGS/USD</td>
+            <td>{currency.getKGS() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KHR/USD</td>
+            <td>{currency.getKHR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KMF/USD</td>
+            <td>{currency.getKMF() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KPW/USD</td>
+            <td>{currency.getKPW() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KRW/USD</td>
+            <td>{currency.getKRW() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KWD/USD</td>
+            <td>{currency.getKWD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KYD/USD</td>
+            <td>{currency.getKYD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>KZT/USD</td>
+            <td>{currency.getKZT() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>LAK/USD</td>
+            <td>{currency.getLAK() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>LBP/USD</td>
+            <td>{currency.getLBP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>LKR/USD</td>
+            <td>{currency.getLKR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>LRD/USD</td>
+            <td>{currency.getLRD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>LSL/USD</td>
+            <td>{currency.getLSL() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>LYD/USD</td>
+            <td>{currency.getLYD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MAD/USD</td>
+            <td>{currency.getMAD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MDL/USD</td>
+            <td>{currency.getMDL() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MGA/USD</td>
+            <td>{currency.getMGA() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MKD/USD</td>
+            <td>{currency.getMKD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MMK/USD</td>
+            <td>{currency.getMMK() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MNT/USD</td>
+            <td>{currency.getMNT() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MOP/USD</td>
+            <td>{currency.getMOP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MRU/USD</td>
+            <td>{currency.getMRU() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MUR/USD</td>
+            <td>{currency.getMUR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MVR/USD</td>
+            <td>{currency.getMVR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MWK/USD</td>
+            <td>{currency.getMWK() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MXN/USD</td>
+            <td>{currency.getMXN() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MYR/USD</td>
+            <td>{currency.getMYR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>MZN/USD</td>
+            <td>{currency.getMZN() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>NAD/USD</td>
+            <td>{currency.getNAD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>NGN/USD</td>
+            <td>{currency.getNGN() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>NIO/USD</td>
+            <td>{currency.getNIO() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>NOK/USD</td>
+            <td>{currency.getNOK() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>NPR/USD</td>
+            <td>{currency.getNPR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>NZD/USD</td>
+            <td>{currency.getNZD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>OMR/USD</td>
+            <td>{currency.getOMR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>PAB/USD</td>
+            <td>{currency.getPAB() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>PEN/USD</td>
+            <td>{currency.getPEN() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>PGK/USD</td>
+            <td>{currency.getPGK() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>PHP/USD</td>
+            <td>{currency.getPHP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>PKR/USD</td>
+            <td>{currency.getPKR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>PLN/USD</td>
+            <td>{currency.getPLN() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>PYG/USD</td>
+            <td>{currency.getPYG() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>QAR/USD</td>
+            <td>{currency.getQAR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>RON/USD</td>
+            <td>{currency.getRON() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>RSD/USD</td>
+            <td>{currency.getRSD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>RUB/USD</td>
+            <td>{currency.getRUB() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>RWF/USD</td>
+            <td>{currency.getRWF() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SAR/USD</td>
+            <td>{currency.getSAR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SBD/USD</td>
+            <td>{currency.getSBD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SCR/USD</td>
+            <td>{currency.getSCR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SDG/USD</td>
+            <td>{currency.getSDG() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SEK/USD</td>
+            <td>{currency.getSEK() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SGD/USD</td>
+            <td>{currency.getSGD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SHP/USD</td>
+            <td>{currency.getSHP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SLL/USD</td>
+            <td>{currency.getSLL() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SOS/USD</td>
+            <td>{currency.getSOS() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SRD/USD</td>
+            <td>{currency.getSRD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SSP/USD</td>
+            <td>{currency.getSSP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>STD/USD</td>
+            <td>{currency.getSTD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>STN/USD</td>
+            <td>{currency.getSTN() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SVC/USD</td>
+            <td>{currency.getSVC() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SYP/USD</td>
+            <td>{currency.getSYP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>SZL/USD</td>
+            <td>{currency.getSZL() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>THB/USD</td>
+            <td>{currency.getTHB() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TJS/USD</td>
+            <td>{currency.getTJS() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TMT/USD</td>
+            <td>{currency.getTMT() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TND/USD</td>
+            <td>{currency.getTND() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TOP/USD</td>
+            <td>{currency.getTOP() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TRY/USD</td>
+            <td>{currency.getTRY() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TTD/USD</td>
+            <td>{currency.getTTD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TWD/USD</td>
+            <td>{currency.getTWD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>TZS/USD</td>
+            <td>{currency.getTZS() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>UAH/USD</td>
+            <td>{currency.getUAH() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>UGX/USD</td>
+            <td>{currency.getUGX() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>UYU/USD</td>
+            <td>{currency.getUYU() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>UZS/USD</td>
+            <td>{currency.getUZS() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>VES/USD</td>
+            <td>{currency.getVES() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>VND/USD</td>
+            <td>{currency.getVND() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>VUV/USD</td>
+            <td>{currency.getVUV() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>WST/USD</td>
+            <td>{currency.getWST() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XAF/USD</td>
+            <td>{currency.getXAF() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XAG/USD</td>
+            <td>{currency.getXAG() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XAU/USD</td>
+            <td>{currency.getXAU() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XCD/USD</td>
+            <td>{currency.getXCD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XDR/USD</td>
+            <td>{currency.getXDR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XOF/USD</td>
+            <td>{currency.getXOF() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XPD/USD</td>
+            <td>{currency.getXPD() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XPF/USD</td>
+            <td>{currency.getXPF() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>XPT/USD</td>
+            <td>{currency.getXPT() ?: "0.00"}</td>
+        </tr>
+
+        <tr class="table-primary">
+            <td>YER/USD</td>
+            <td>{currency.getYER() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ZAR/USD</td>
+            <td>{currency.getZAR() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ZMW/USD</td>
+            <td>{currency.getZMW() ?: "0.00"}</td>
+        </tr>
+        <tr class="table-primary">
+            <td>ZWL/USD</td>
+            <td>{currency.getZWL() ?: "0.00"}</td>
+        </tr>
+
+    </table>
+
+    <p style="font-size: small; color: rgb(176, 174, 174);">Finance mobile applications have become an integral part
+        of the modern
+        investment world.
+        They provide a convenient and accessible way to monitor financial markets in real-time, allowing users
+        to track stocks, bonds, funds, and other financial instruments wherever they are. These applications
+        offer up-to-date information on quotes, charts, news, and analytics, helping investors make informed
+        decisions
+        and even execute trades right from their mobile devices. With these tools, users can manage their
+        portfolios, set alerts, and stay updated on all market changes, always having market data literally at their
+        fingertips.
+    </p>
+
+    <div style="margin-bottom: 30px;">
+        <button type="button" class="btn btn-outline-primary"
+                onclick="location.href = 'https://apps.apple.com/ua/app/monegoo-finance/id6448564268'">AppStore</button>
+        <button type="button" class="btn btn-outline-success" style="margin-left: 3px;"
+                onclick="location.href = 'https://play.google.com/store/apps/details?id=com.monegoo.currency.monegoo_currency'">Google
+            Play</button>
+    </div>
+
+</div>
+</body>
